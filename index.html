@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="cards.js"></script>
+    <script src="script.js"></script>
+    <title>Cartas Calavera</title>
+</head>
+<body class="bdy">
+    <header class="section-stop">
+        <button onclick="btnStop()" id="btn-stop">Parar</button>
+        <div class="timer">00:00:00</div>
+    </header>
+    <section class="section-cards">
+        <div class="card">
+            <img src="img/icons/icon-diamond.svg" alt="icon card" id="palo1">
+            <div id="num1-card">-</div>
+        </div>
+        <div class="card">
+            <img src="img/icons/icon-pica.svg" alt="icon card" id="palo2">
+            <div id="num2-card">-</div>
+        </div>
+        <div class="card">
+            <img src="img/icons/icon-heart.svg" alt="icon card" id="palo3">
+            <div id="num3-card">-</div>
+        </div>
+        <div class="card">
+            <img src="img/icons/icon-trebol.svg" alt="icon card" id="palo4">
+            <div id="num4-card">-</div>
+        </div>
+    </section>
+    <section class="section-exercises">
+        <div id="exe1" class="exercise">---</div>
+        <div id="exe2" class="exercise">---</div>
+        <div id="exe3" class="exercise">---</div>
+        <div id="exe4" class="exercise">---</div>
+    </section>
+    <footer class="section-play">
+        <div class="side-play">
+            <img src="img/icons/icon-cards.png" alt="icon cards" class="side-icon-play">
+            <div id="cont-card">52</div>
+        </div>
+        <button onclick="btnStart()" id="btn-start">
+            <div>COMENZAR</div>
+            <img src="img/icons/icon-play.png" alt="icon play" class="side-btn-play">
+        </button>
+    </footer>
+</body>
+</html> 
