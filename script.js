@@ -4,12 +4,9 @@ function btnStart(){
     let arrCard = [];
     if (newCards.length>0) {
         for (let i=0; i<4 ; i++) {
-            //console.log (newCards.length);
             let rndcard = Math.floor(Math.random() * (newCards.length-1));
-            //console.log (newCards[rndcard].número + " de " + newCards[rndcard].palo + " => " + newCards[rndcard].ejercicio);
             arrCard.push(newCards[rndcard]);
             newCards.splice(rndcard,1);
-
         }
         console.log(arrCard);
 /*         console.log(arrCard[0].número + " de " + arrCard[0].palo);
