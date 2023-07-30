@@ -2,17 +2,14 @@ let newCards = [].concat(cards);
 
 function btnStart(){
     let arrCard = [];
+    timer = "encendido";
+
     if (newCards.length>0) {
         for (let i=0; i<4 ; i++) {
             let rndcard = Math.floor(Math.random() * (newCards.length-1));
             arrCard.push(newCards[rndcard]);
             newCards.splice(rndcard,1);
         }
-        console.log(arrCard);
-/*         console.log(arrCard[0].número + " de " + arrCard[0].palo);
-        console.log(arrCard[1].número + " de " + arrCard[1].palo);
-        console.log(arrCard[2].número + " de " + arrCard[2].palo);
-        console.log(arrCard[3].número + " de " + arrCard[3].palo); */
         
         const cont = document.getElementById("cont-card");
         cont.innerHTML = newCards.length;
@@ -46,6 +43,7 @@ function btnStart(){
         
     } else {
         btnStop();
+        timer = "apagado";
     }
 }
 
@@ -71,4 +69,15 @@ function btnStop(){
     ex3.innerHTML = "---";
     const ex4 = document.getElementById("exe4");
     ex4.innerHTML = "---";
+
+    const pa1 = document.getElementById("palo1");
+    pa1.src = "img/icons/icon-diamond.svg";
+    const pa2 = document.getElementById("palo2");
+    pa2.src = "img/icons/icon-pica.svg";
+    const pa3 = document.getElementById("palo3");
+    pa3.src = "img/icons/icon-heart.svg";
+    const pa4 = document.getElementById("palo4");
+    pa4.src = "img/icons/icon-trebol.svg";
+
+    timer = "apagado";
 }

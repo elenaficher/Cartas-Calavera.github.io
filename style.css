@@ -46,7 +46,7 @@
 .section-stop {
     display: flex;
     width: 340px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     gap: 24px;
     font-size: 40px;
