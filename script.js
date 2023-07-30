@@ -40,6 +40,11 @@ function btnStart(){
         pa3.src = arrCard[2].iconCard;
         const pa4 = document.getElementById("palo4");
         pa4.src = arrCard[3].iconCard;
+
+        if (newCards.length==0) {
+            const buttonFinish = document.getElementById("text-start");
+            buttonFinish.innerHTML = "FINALIZAR";
+        }
         
     } else {
         btnStop();
@@ -53,13 +58,13 @@ function btnStop(){
     cont.innerHTML = newCards.length;
 
     const nc1 = document.getElementById("num1-card");
-    nc1.innerHTML = "--";
+    nc1.innerHTML = "-";
     const nc2 = document.getElementById("num2-card");
-    nc2.innerHTML = "--";
+    nc2.innerHTML = "-";
     const nc3 = document.getElementById("num3-card");
-    nc3.innerHTML = "--";
+    nc3.innerHTML = "-";
     const nc4 = document.getElementById("num4-card");
-    nc4.innerHTML = "--";
+    nc4.innerHTML = "-";
 
     const ex1 = document.getElementById("exe1");
     ex1.innerHTML = "---";
@@ -78,6 +83,9 @@ function btnStop(){
     pa3.src = "img/icons/icon-heart.svg";
     const pa4 = document.getElementById("palo4");
     pa4.src = "img/icons/icon-trebol.svg";
+
+    const buttonFinish = document.getElementById("text-start");
+    buttonFinish.innerHTML = "COMENZAR";
 
     timer = "apagado";
 }

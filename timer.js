@@ -1,9 +1,8 @@
-let temporizador = setInterval(printer,100);
+let temporizador = setInterval(printer,1000);
 let x = 0;
 let segundos = 0;
 let minutos = 0;
 let timer = "apagado";
-
 
 function printer() {
     if (timer == "encendido") {
@@ -12,13 +11,10 @@ function printer() {
         if (x%60 == 0) {
             minutos++;
         }
-        console.log(x);
         if (segundos<10) {
-            console.log(minutos + ":0" + segundos);
             const timertext = document.getElementById("tempo");
             timertext.innerHTML = minutos + ":0" + segundos;
         } else {
-            console.log(minutos + ":" + segundos);
             const timertext = document.getElementById("tempo");
             timertext.innerHTML = minutos + ":" + segundos;
         }
