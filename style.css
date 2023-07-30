@@ -48,7 +48,7 @@
     width: 340px;
     /* justify-content: space-between; */
     align-items: center;
-    gap: 24px;
+    gap: 32px;
     font-size: 40px;
     font-weight: 100;
 }
@@ -93,7 +93,7 @@
 #btn-stop {
     display: flex;
     height: 48px;
-    width: 140px;
+    width: 120px;
     justify-content: center;
     align-items: center;
     gap: 16px;
