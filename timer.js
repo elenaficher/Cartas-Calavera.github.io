@@ -28,6 +28,6 @@ function printer() {
         segundos = 0;
         minutos = 0;
         const timertext = document.getElementById("tempo");
-        timertext.innerHTML = minutos + ":" + segundos;
+        timertext.innerHTML = minutos + ":0" + segundos;
     }
 }
