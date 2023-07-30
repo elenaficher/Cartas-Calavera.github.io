@@ -10,10 +10,9 @@ function btnStart(){
             arrCard.push(newCards[rndcard]);
             newCards.splice(rndcard,1);
         }
-        
         const cont = document.getElementById("cont-card");
         cont.innerHTML = newCards.length;
-    
+        
         const nc1 = document.getElementById("num1-card");
         nc1.innerHTML = arrCard[0].número;
         const nc2 = document.getElementById("num2-card");
